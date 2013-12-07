@@ -5,6 +5,13 @@
 
 <main class="content" role="main">
 
+<form action='http://www.google.de/search' id='searchForm'>
+  <input name='q' type='hidden' value='site:blog.kopis.de' />
+<div data-role="fieldcontain" class="ui-hide-label">
+  <input id="q" name='q' size='20' type='text' placeholder="In Artikeln suchen" />
+</div>
+</form>
+
     <article class="{{post_class}}">
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
