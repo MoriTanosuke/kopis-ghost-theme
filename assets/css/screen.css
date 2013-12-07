@@ -599,6 +599,18 @@ table.plain {
     font-size: 1.1rem;
 }
 
+#searchForm {
+    float: right;
+}
+
+#recentcomments {
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+    font-size: 0.7em;
+    line-height: 1em;
+}
+
 
 /* ==========================================================================
    7. Pagination - Tools to let you flick between pages
@@ -936,3 +948,4 @@ table.plain {
    End of file. Media queries should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+
