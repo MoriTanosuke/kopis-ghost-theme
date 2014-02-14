@@ -24,7 +24,6 @@
 
 @import url(normalize.css);
 
-
 /* ==========================================================================
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
@@ -614,7 +613,6 @@ a {
     font-size: 0.7em;
     line-height: 1em;
 }
-
 
 /* ==========================================================================
    7. Pagination - Tools to let you flick between pages
