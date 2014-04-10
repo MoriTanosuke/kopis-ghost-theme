@@ -25,9 +25,28 @@
 </div>
 </form>
 
-    {{! Each post will be output using this markup }}
+    {{! Display featured posts at the top }}
     {{#foreach posts}}
+    {{#if featured}}
+    <article class="{{post_class}} .featured">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
+            <h2 class="post-title"><img src="/assets/images/emoji/star.png" class="featured" title="featured post" alt="featured post" /><a href="{{url}}">{{{title}}}</a></h2>
+        </header>
+        <section class="post-social">
+            <a href="{{url}}#disqus_thread">0 Antworten</a>
+            <g:plusone href="{{url}}" size="small">
+        </section>
+        <section class="post-excerpt">
+            <p>{{excerpt}}&hellip; <a href="{{url}}">weiterlesen</a></p>
+        </section>
+    </article>
+    {{/if}}
+    {{/foreach}}
 
+    {{! Display regular posts }}
+    {{#foreach posts}}
+    {{#unless featured}}
     <article class="{{post_class}}">
         <header class="post-header">
             <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{#if tags}}on {{tags}}{{/if}}</span>
@@ -41,7 +60,7 @@
             <p>{{excerpt}}&hellip; <a href="{{url}}">weiterlesen</a></p>
         </section>
     </article>
-
+    {{/unless}}
     {{/foreach}}
 
     {{!! After all the posts, we have the previous/next pagination links }}
