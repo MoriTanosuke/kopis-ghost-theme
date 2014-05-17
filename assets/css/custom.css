@@ -14,3 +14,8 @@ img.featured {
   margin-left: -1.25em;
   padding-right: 0.25em;
 }
+
+.FlattrButton {
+  display: none;
+}
+
