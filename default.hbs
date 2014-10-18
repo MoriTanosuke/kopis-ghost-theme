@@ -17,10 +17,7 @@
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
-
-<script type="text/javascript">
-</script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -41,7 +38,6 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
     <script type="text/javascript" src="/assets/js/emojify.min.js"></script>
 
 <script type="text/javascript">
@@ -72,24 +68,24 @@ emojify.setConfig({
 emojify.run();
 
 //piwik
-  var _paq = _paq || [];
-  _paq.push(["trackPageView"]);
-  _paq.push(["enableLinkTracking"]);
+var _paq = _paq || [];
+_paq.push(["trackPageView"]);
+_paq.push(["enableLinkTracking"]);
 
-  (function() {
-    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://kopis.de/piwik/";
-    _paq.push(["setTrackerUrl", u+"piwik.php"]);
-    _paq.push(["setSiteId", "10"]);
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-  })();
+(function() {
+  var u=(("https:" == document.location.protocol) ? "https" : "http") + "://kopis.de/piwik/";
+  _paq.push(["setTrackerUrl", u+"piwik.php"]);
+  _paq.push(["setSiteId", "10"]);
+  var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+  g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+})();
 
 window.___gcfg = {lang: 'de'};
-(function()
-{var po = document.createElement("script");
-po.type = "text/javascript"; po.async = true;po.src = "//apis.google.com/js/plusone.js";
-var s = document.getElementsByTagName("script")[0];
-s.parentNode.insertBefore(po, s);
+(function(){
+  var po = document.createElement("script");
+  po.type = "text/javascript"; po.async = true;po.src = "//apis.google.com/js/plusone.js";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(po, s);
 })();
 
 // show flattr button again
