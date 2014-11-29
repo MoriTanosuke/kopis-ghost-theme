@@ -33,6 +33,10 @@ article header * .blog-description {
   font-family: 'Droid Serif', serif;
 }
 
+.post-content img {
+  box-shadow: 0px 0px 15px #666;
+}
+
 img.featured {
   height: 1em;
   float: left;
@@ -83,6 +87,11 @@ form#searchForm div input {
 img.emoji {
   display: inline !important;
   height: 1.2em;
+  box-shadow: none;
 }
 
-
+.creative-commons {
+  text-align: center;
+  font-size: small;
+  background: #fafafa;
+}
